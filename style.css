@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #faf5ed;
+    color: #293e30;
+}
+header {
+    background-color: #fffaf3;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo h1 {
+    font-family: Georgia, serif;
+    color: #40583d;
+}
+.logo p {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+}
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+nav a {
+    text-decoration: none;
+    color: #293e30;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #8a9c70;
+}
+.banner {
+    min-height: 350px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg,
+        rgba(250, 245, 237, 0.98),
+        rgba(250, 245, 237, 0.55)),
+        url("https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1600")
+        center/cover;
+}
+.banner-texto {
+    max-width: 500px;
+}
+.banner h2 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.botao {
+    display: inline-block;
+    background-color: #536b49;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-top: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+.botao:hover {
+    background-color: #344a32;
+    transform: translateY(-2px);
+}
+.produtos {
+    padding: 50px 5%;
+    text-align: center;
+}
+.produtos h2,
+.sobre h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.subtitulo {
+    margin-bottom: 30px;
+}
+.container-produtos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.card {
+    background-color: #fffdf9;
+    width: 210px;
+    border: 1px solid #e5ddd0;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000015;
+}
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.card h3 {
+    font-size: 17px;
+    margin: 15px 8px 10px;
+}
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 12px;
+    flex-grow: 1;
+}
+.card strong {
+    font-size: 18px;
+    margin-top: 15px;
+}
+.card .botao {
+    width: 85%;
+    margin-top: 15px;
+}
+.sobre {
+    padding: 55px 7%;
+    background-color: #eae8d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.sobre-imagem,
+.sobre-texto {
+    flex: 1 1 300px;
+}
+.sobre-imagem img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.sobre-texto p {
+    line-height: 1.8;
+    margin: 15px 0;
+}
+footer {
+    background-color: #344a39;
+    color: white;
+    text-align: center;
+    padding: 35px 20px 15px;
+}
+footer h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 10px;
+}
+footer p {
+    margin: 10px 0;
+}
+.copyright {
+    border-top: 1px solid #ffffff40;
+    margin-top: 25px;
+    padding-top: 15px;
+    font-size: 13px;
+}
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+    .banner {
+        padding: 45px 7%;
+    }
+    .banner h2 {
+        font-size: 32px;
+    }
+    .container-produtos {
+        gap: 15px;
+    }
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+    .sobre {
+        text-align: center;
+    }
+}
